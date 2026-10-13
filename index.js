@@ -8,3 +8,6 @@ function updateClock() {
     document.getElementById('minutehand').style.transform = `rotate(${minutes}deg)`;
     document.getElementById('secondhand').style.transform = `rotate(${seconds}deg)`;
 }
+
+updateClock(); // Initial call to set the clock immediately
+setInterval(updateClock, 1000); // Update the clock every second

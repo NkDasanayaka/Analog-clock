@@ -1,4 +1,10 @@
-.clock{
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #e9edf2;
+}
+
+.clock {
     width: 300px;
     height: 300px;
     border: 10px solid #000000;
@@ -8,7 +14,7 @@
     margin: 50px auto;
 }
 
-.number{
+.number {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -18,74 +24,95 @@
     font: bold 20px/30px sans-serif;
     text-align: center;
     transform: rotate(calc(var(--n) * 30deg)) translateY(-110px) rotate(calc(var(--n) * -30deg));
-
-
 }
 
-.n1{
+.n1 {
     --n: 1;
 }
-.n2{
+
+.n2 {
     --n: 2;
 }
-.n3{
+
+.n3 {
     --n: 3;
 }
-.n4{
+
+.n4 {
     --n: 4;
 }
-.n5{
+
+.n5 {
     --n: 5;
 }
-.n6{
+
+.n6 {
     --n: 6;
 }
-.n7{
+
+.n7 {
     --n: 7;
 }
+
 .n8 {
     --n: 8;
 }
+
 .n9 {
     --n: 9;
 }
+
 .n10 {
     --n: 10;
 }
+
 .n11 {
     --n: 11;
 }
+
 .n12 {
     --n: 12;
 }
 
-.hand{
+.hand {
     position: absolute;
     bottom: 50%;
     left: 50%;
     transform-origin: bottom;
-    transform: rotate(90deg);
+    transform: rotate(0deg);
     transition: transform 0.5s ease-in-out;
-    background: #1a1a1a
+    background: #1a1a1a;
 }
 
-.hour-hand{
+.hour-hand {
     width: 8px;
     height: 60px;
-    
-    margin-left: -3px;
+    margin-left: -4px;
     border-radius: 6px 6px 0 0;
 }
-.minute-hand{
+
+.minute-hand {
     width: 5px;
     height: 80px;
-    margin-left: -2px;
+    margin-left: -2.5px;
     border-radius: 4px 4px 0 0;
 }
-.second-hand{
+
+.second-hand {
     width: 2px;
     height: 120px;
     margin-left: -1px;
     border-radius: 2px 2px 0 0;
     background: red;
+}
+
+.center-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    margin: -7px;
+    border-radius: 50%;
+    background: #1a1a1a;
 }
